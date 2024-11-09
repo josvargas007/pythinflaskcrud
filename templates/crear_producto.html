@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Producto</title>
+</head>
+<body>
+    <h1>Crear Producto</h1>
+    <form action="" method="post">
+        <label>Descripción:</label><br>
+        <input type="text" name="descripcion"><br>
+        <label>Cantidad:</label><br>
+        <input type="number" name="cantidad"><br>
+        <label>Precio:</label><br>
+        <input type="number" step="any" name="precio"><br>
+        <input type="submit" value="Crear">
+    </form>
+    <p><a href="{{ url_for('get_productos') }}">Volver a la lista de productos</a></p>
+</body>
+</html>

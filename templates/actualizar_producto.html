@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actualizar Producto</title>
+</head>
+<body>
+    <h1>Actualizar Producto {{ producto[0] }}</h1>
+    <form action="" method="post">
+        <label>Descripción:</label><br>
+        <input type="text" name="descripcion" value="{{ producto[1] }}"><br>
+        <label>Cantidad:</label><br>
+        <input type="number" name="cantidad" value="{{ producto[2] }}"><br>
+        <label>Precio:</label><br>
+        <input type="number" step="any" name="precio" value="{{ producto[3] }}"><br>
+        value="{{ producto[3] }}"><br>
+        <input type="submit" value="Actualizar">
+    </form>
+    <p><a href="{{ url_for('get_productos') }}">Volver a la lista de productos</a></p>
+</body>
+</html>
+    
